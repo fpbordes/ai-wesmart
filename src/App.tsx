@@ -111,14 +111,17 @@ function App() {
     return (
       <div className="app-container">
         <div className="content-card">
-          <AlertCircle className="w-16 h-16 text-orange-500 mb-4" />
-          <h1 className="text-2xl font-bold mb-4">Paramètres manquants</h1>
-          <p className="text-gray-600 mb-4">
-            Cette page nécessite les paramètres <code>report</code> et <code>finding</code> dans l'URL.
+          <h1 className="text-3xl font-bold mb-2">WeSmart AI</h1>
+          <p className="text-gray-600 mb-6">
+            L'intelligence artificielle au service de l'énergie
           </p>
-          <p className="text-sm text-gray-500">
-            Exemple: <code>?report=RPT-2025-11-05-abcd1234&finding=CM-005</code>
-          </p>
+          <a
+            href="https://wesmart.com/chat"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold rounded-lg hover:from-green-600 hover:to-blue-600 transition-all transform hover:scale-105 shadow-lg"
+          >
+            Discuter avec Julie
+            <ExternalLink className="w-4 h-4" />
+          </a>
         </div>
       </div>
     )
